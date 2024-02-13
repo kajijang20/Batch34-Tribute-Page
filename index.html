@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+  function toggle(name) {
+  var x = document.getElementById(name);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <!-- Nice implementation of JS in in showing the information. Change for next time, I noticed that the other "tabs" doesn't close or hide immediately when other tabs are clicked. They're basically  overlapping each other and when you clicked the "Current positions" again you'll see the "Research Projects" information. All good so far for your 1st project.--->
+<body id="main">
+  <script src="script.js"></script>
+  <h1 id="title"><b>Dr. Rowena Cristina L. Guevara</b></h1>
+  
+  <h5 class="quote"> <i>"Women make amazing engineers and leaders when given the opportunity, and when they pursue the opportunity."</i></h5>  
+  
+  <div id="img-div">
+    <img src="Rowena Guvarra.png" id="image" alt="Error Loading Image">
+    <small id="img-caption"> <b>Engineer. Changemaker.</b></small>
+  </div>
+
+  
+  <button type="button" id="button" class="button1" onclick="toggle('tribute-info1')">
+    Education Background
+  </button>
+  
+  <div id="tribute-info1" style="display: none;">
+    Dr. Rowena Guevarra holds a BS Electrical Engineering and MSEE degrees from UP Diliman in 1985 and 1990 respectively, and a PhDEE from the University of Michigan in 1997. She continued her post-doctoral degree in the Tokyo Institute of Technology for Speech Signal Processing in 1998. 
+    
+    For more information on her background, check<a id="tribute-link" href="https://www.facebook.com/uppoliticalsociety/photos/personal-information-name-guevara-rowena-cristina-lage-52-educationtertiary-bach/10154546045638374/?paipv=0&eav=AfYSHorIYBUjQcZkbGPzFur6MrMHyFRNPfA8NlOw3QdqzRoOkfACv2pZ3OorWaHdHbM&_rdr" target="blank">this</a>out!
+  </div>
+
+  
+  <button type="button" id="button" class="button2" onclick="toggle('tribute-info2')">
+    Research Projects
+  </button>
+  
+  <div id="tribute-info2" style="display: none;">
+    Her area of specialization is speech and audio signal processing, time-frequency analysis and synthesis, and she initiated the Digital Signal Processing (DSP) Laboratory in UPD. Some of her researches includes titles such as: 
+    <ul>
+      <li class="list-style">
+        "Filipino sign language recognition using manifold projection learning",</li>
+      <li class="list-style">
+        "Experiments on automatic language identification for Philippine languages using acoustic Gaussian Mixture Models",</li>
+      <li class="list-style">
+        "Feature set for Philippine Gong Music classification by indigenous group",</li>
+    </ul>
+    and<a id="tribute-link" href="https://www.researchgate.net/scientific-contributions/Rowena-Cristina-L-Guevara-2045764137" target="blank">many more</a>!
+  </div>
+
+  
+  <button type="button" id="button" class="button3" onclick="toggle('tribute-info3')">
+    Current Positions
+  </button>
+  
+  <div id="tribute-info3" style="display: none;">
+    Dr. Rowena Guevarra is the Undersecretary for Research and Development of the Department of Science and Technology (DOST), and a professor in the Electrical and Electronics Engineering Institute (EEEI) in the University of the Philippines (UP) Diliman. As of September 2022, she was appointed as the president of the National Transmission Corp. (TransCo). 
+    
+    <br><br>She served as the first woman Dean of the UP College of Engineering and has been the recipient of several awards in engineering and education, including the Metrobank Foundation Search for Outstanding Teachers of the Philippines. She was the proponent and first program leader of the Engineering R&D for Technology, a consortium for graduate engineering scholarship program of DOST since 2007. 
+    See<a id="tribute-link" href="https://eee.upd.edu.ph/about/faculty/rowena-cristina-guevara/#:~:text=Dr.,Department%20of%20Energy%20(DOE).">here</a> and <a id="tribute-link" href="https://gender-summit.com/gs10-speakers/1626-rowena-cristina-l-guevara">here</a>for more info!
+  </div>
+  
+  <div class="footer">
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

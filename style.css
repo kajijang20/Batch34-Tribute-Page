@@ -1,0 +1,245 @@
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  margin-left: auto; margin-right: auto; margin-top: 30px;
+  text-align: center; font-size: 5.5vw;
+  padding-left: max(4vw, 5%);
+  padding-right: max(4vw, 5%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #450d57;
+  text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125), 0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+  cursor: pointer;
+  transition: text-shadow 0.8s;
+}
+
+#title:hover {
+  color: white;
+  text-shadow: 0.2vw 0.2vw #23036a,
+              0.4vw 0.4vw #3700b3,
+              0.6vw 0.6vw #6200ee, 
+              0.8vw 0.8vw #7f39fb, 
+              1.0vw 1.0vw #985eff;
+}
+
+#img-div {
+  text-align: center;
+  color: #450d57;
+}
+
+#image {
+  width: 55%; display: flex; float: left;
+  max-width: 550px;
+  -webkit-filter: /*(1px 1px 0 white)
+                  drop-shadow(-1px -1px 0 white)*/
+                  brightness(1.3);
+  filter: /*drop-shadow(1px 1px 0 white) 
+          drop-shadow(-1px -1px 0 white)*/ 
+          brightness(1.3)
+          grayscale(100%);
+}
+
+.quote {
+  color: #450d57; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3vw; top: 20vw;
+  text-shadow: 0.2vw 0.2vw lavenderblush;
+  position: absolute; text-align: right; padding-left: 40vw;
+  padding-right: min(7vw, 50%);
+  cursor: pointer;
+}
+
+.quote:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+#img-caption {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: max(2vw, 3%); 
+  padding-left: min(1vw, 30%);
+  padding-right: min(1vw, 40%);
+  border-bottom: 4px solid darkorchid;
+}
+
+#button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  border: none; border-radius: 1vw;
+  font-size: 3vw; text-align: center;
+  text-decoration: none;
+  margin: 1vw; padding: 3vw 4vw;
+  position: absolute;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  height: 9vw;
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.button1 {
+  background-color: #3700b3; 
+  top: 54vw;
+  left: 3vw;
+}
+
+.button2 {
+  background-color: #6200ee; 
+  top: 64vw;
+  left: 8.6vw;
+}
+
+.button3 {
+  background-color: #7f39fb; 
+  top: 74vw;
+  left: 10.2vw;
+}
+
+#tribute-info1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: left; font-size: 2.5vw;
+  width: 45%; 
+  position: absolute;
+  background-color: #3700b3;
+  display: block; padding: 2vw 2vw;
+  border-radius: 1.5vw; left: 45vw; top: 50vw;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#tribute-info1:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#tribute-info2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: justify; font-size: 2.5vw;
+  width: 45%; 
+  position: absolute;
+  background-color: #6200ee;
+  display: block; padding: 2vw 2vw;
+  border-radius: 1.5vw; left: 45vw; top: 50vw;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#tribute-info2:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#tribute-info3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: left; font-size: 2.5vw;
+  width: 45%; 
+  position: absolute;
+  background-color: #7f39fb;
+  display: block; padding: 2vw 2vw;
+  border-radius: 1.5vw; left: 45vw; top: 50vw;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#tribute-info3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#tribute-link {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 5px;
+}
+
+.list-style {
+  padding-left: 2vw;
+  text-align: left; 
+  list-style-position: outside;
+}
+
+.logos {
+  align-content: center;
+  position: absolute;
+  bottom: 0vw; height: 5vw; width: 100%;
+  padding: 1vw 1vw 0vw 1.2vw;
+}
+
+@media screen and (min-width: 850px) {
+  #title {
+    font-size: 50px;
+  }
+  #img-caption {
+    font-size: 20px;
+  }
+}/*
+@media screen and (min-width: 720px) {
+  .quote {
+    font-size: 24px;
+  }
+  .button1 {
+    top: 70%;
+  }
+  .button2 {
+    top: 80%;
+  }
+  .button3 {
+    top: 90%;
+  }
+}
+
+/*
+.footer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: fixed;
+  text-align: center;
+  padding: 1vw 1vw 0vw 1.2vw;
+  bottom: 0.5vw;
+  width: 100%;
+  height: 3vw;
+  background: #eaeaea;
+} */
